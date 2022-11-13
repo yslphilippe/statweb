@@ -1,0 +1,112 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: lightblue;
+}
+body {
+    padding: 25px;
+}
+main {
+    border: 1px solid black;
+    border-radius: 0px 0px 0px 0px;
+    padding-bottom: 80px;
+}
+h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+#afschermen {
+    float:  right;
+    border-radius: 25px 0px 0px 25px;
+}
+#schoolploeg {
+    float: left;
+    border-radius: 0px 25px 25px 0px;
+}
+.nav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: yellow;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: -25px;
+}
+.nav > li
+{
+    display: inline;
+    float: left;
+    padding:0%;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+li a:hover {
+    background-color: lightseagreen;
+}
+body {
+    padding: 25px;
+}
+img {
+    padding:5px
+
+}
+p {
+    padding: 5px;
+}
+h2 {
+    padding: 5px;
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.clubsitem {
+    padding: 10px;
+}
+ul li {
+    list-style-type: none;
+}
+form {
+    padding: 5px;
+}
+textarea {
+    margin: 15px;
+}
+button {
+    margin: 15px;
+    
+    
+}
+.ind-mapa {
+    position: relative;
+    display: flex;
+}
+.ind-mapa > * {
+    flex: 0 1 auto;
+    z-index: 1;
+}
+.resp-iframe {
+    flex: 0 0 auto;
+    margin-left: 100px;
+    margin-top: 20px;
+    float: right;
+}
+.contact {
+    float: right;
+    padding-right: 100px;
+}
+footer {
+    margin-top: 0px;
+    padding: 25px;
+    text-align: center;
+    border:solid 1px lightgreen;
+    border-radius: 0px 0px 25px 25px;
+    background-color: lightgreen;
+}
