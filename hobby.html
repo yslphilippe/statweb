@@ -5,27 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interesses</title>
-    <link href="css/hobby.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/hobby.css" rel="stylesheet" type="text/css">!-->
     <link rel="icon" type="image/x-icon" href="/img/favicon (3).ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+    html {
+        overflow-x: hidden;
+    }
+    .navbar {
+        background-color: lightblue;
+    }
+
+    .my-row {
+        
+    }
+
+    .img-thumbnail {
+        float: right;
+    }
+    .text-index {
+        margin-top: 3em;
+        background-color: bisque;
+        border-radius: 25px;
+        padding: 50px;
+        margin-bottom: 20px;
+    }
+    .my-card {
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .my-footer {
+        background-color: greenyellow;
+        justify-content: center;
+    }
+    .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+        .fa:hover {
+        opacity: 0.7;
+        }
+
+
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        
+        }
+
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        
+        }
+</style>
 <body>
-    <header>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hobby.html">Interesses</a></li>
-            <li><a href="ervaring.html">Mijn ervaring</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Noah Egemasi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobby.html">interesses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">cv</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ervaring.html">ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </header>
     <main>
     <h1>Interesses</h1>
     <h2>Mijn eerste liefde - The wonderful game</h2>
-    <p>Sinds jongs af aan was ik altijd al in de ban van voetbal. Op mijn 8ste bracht mijn vader me voor de eerste keer naar een voetbaltraining bij een lokale club, waar ik onmiddellijk 5 goals tegen de netten schopte. Van hieruit groeide mijn passie voor de sport exponentieel.Vanaf mijn 8 tot mijn 12 heb ik bij Oud-Turnhout gespeeld. Hierna ben ik op talentenjacht gegaan bij KV Turnhout, waar ik een geslaagde testdag achter de rug had. Dit jaar ben ik dan naar Turnhout gegaan om in 2de nationale te beginnen voetballen.  <img id="afschermen" src="img/bal_afschermen.jpg" alt="afschermen" height="250" width="350"</p>
+    <p>Sinds jongs af aan was ik altijd al in de ban van voetbal. Op mijn 8ste bracht mijn vader me voor de eerste keer naar een voetbaltraining bij een lokale club, waar ik onmiddellijk 5 goals tegen de netten schopte. Van hieruit groeide mijn passie voor de sport exponentieel.Vanaf mijn 8 tot mijn 12 heb ik bij Oud-Turnhout gespeeld. Hierna ben ik op talentenjacht gegaan bij KV Turnhout, waar ik een geslaagde testdag achter de rug had. Dit jaar ben ik dan naar Turnhout gegaan om in 2de nationale te beginnen voetballen.</p> <img class="img-fluid" src="img/bal_afschermen.jpg" alt="afschermen" height="250" width="350">
     <br>
     <br>
     <h2>De druk stijgt</h2>
     <p class="fotoschool"> het middelbaar was er een bekend toernooi. Dit toernooi was het fameuze scholenvoetbal. Enkel de beste voetballers van de school mochten het opnemen tegen andere scholen om het uiteindelijk zo ver mogelijk proberen te schoppen en voor de beker te voetballen. Ons team was ongelofelijk goed en we wonnen alles. Op een gegeven moment moesten we zelfs tegen de academie van Gent spelen, hierdoor mochten we af en toe vroeger weg uit de les omdat dit wel een eindje reizen was!</p>
-    <img id="schoolploeg" alt="schoolploeg" src="img/schoolploeg.jpg" width="400" height="260">
+    <img class="img-fluid" alt="schoolploeg" src="img/schoolploeg.jpg" width="400" height="260">
     <br>
     <p>Rond mijn 18de ben ik gestopt met voetbal omdat het leven erg veel van me vroeg: School, relaties en andere dingen zorgden ervoor dat ik gewoonweg geen tijd en moeite meer kon vinden om mijn passie te onderhouden. Door de jaren heen begon ik ook minder en minder genot te halen uit voetbal.</p>
     <br>
@@ -41,9 +145,18 @@
     </ul>
     </main>
     <footer>
-        &copy; <em id="copyright"></em>Noah Egemasi
+        <div class="row">
+            <div class="col my-footer d-flex justify-content-center col-sm-6 col-md-6 bg-light">
+                &copy; <em id="copyright"></em>Noah Egemasi
+            </div>
+            <div class="col my-footer d-flex justify-content-center col-sm-6 col-md-6 bg-light">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
     </footer>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>

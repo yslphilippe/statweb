@@ -1,37 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css">
+   <!-- <link href="css/index.css" rel="stylesheet" type="text/css"> -->
     <link rel="icon" type="image/x-icon" href="img/favicon (3).ico">
-</head>
-<body>
-    <header>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="hobby.html">Interesses</a></li>
-            <li><a href="ervaring.html">Mijn ervaring</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
-    <main>
-        <h1>Noah Egemasi</h1>
-        <p>Welkom op mijn website! Zoals hierboven in grote letters vermeld, is mijn naam wel werkelijk Noah. Ik ben een enthousiaste, jonge programmeur met torenhoge ambities. Geboren op de vierde dag van de negende maand van het 2000ste jaar - al meer dan 22 jaar aan plezier!<img class="selfie" src="img/selfie.jpg" alt="selfie" height="400" width="400" ></p>
-        <br>
-        <br>
-        <p>Al van jongs af aan was ik altijd terug te vinden achter de schermen. Het is dan ook geen geheim dat ik hier ongetwijfeld verder mee wilde gaan en zo een carriere in de IT-sector ben gestart. Ik behaalde een <a href="ervaring.html">graduaatsdiploma Programmeren</a> aan de Thomas More hogeschool te Turnhout. Naast code schrijven, hou ik er ook van om up to date te zijn met de hedendaagse economie en de staat van de financiële markten. Een echte boekenworm dus!</p>
-        <br>
-        <br>
-        <p>Wanneer het tijd is om even wat minder achter de schermen te zitten, trek ik mijn <a href="hobby.html">voetbalschoenen</a> aan en trap ik graag een balletje met een vriend of twee. Voetbal is mijn eerste liefde sinds jongs af aan, en je eerste liefde vergeet je nooit!</p>
-        <br>
-        <br>
-        <p>Mezelf zou ik het beste kunnen omschrijven als vurig, behulpzaam en competent. Ik heb niet veel nodig om een project tot een goed eind te brengen. Nochtans ben ik een teamspeler; Wanneer de taken efficiënt verdeeld kunnen worden zal een project altijd optimaal uitgewerkt zijn</p>
-    </main>
-    <footer>
-        &copy; <em id="copyright"></em>Noah Egemasi
-    </footer>
-</body>
-</html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: lightblue;
+        }
+    
+        .my-row {
+            
+        }
+
+        .img-thumbnail {
+            justify-content: center;
+        }
+        .text-index {
+            margin-top: 3em;
+            background-color: bisque;
+            border-radius: 25px;
+            padding: 50px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            
+        }
+        .my-card {
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .my-footer {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .my-copyright {
+            align-items: center;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+
+        .fa:hover {
+        opacity: 0.7;
+        }
+
+
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        
+        }
+
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        
+        }
+    </style>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Noah Egemasi</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hobby.html">interesses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cv.html">cv</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ervaring.html">ervaring</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="px-4 py-5 my-5 text-center">
+                        <img class="d-block mx-auto mb-4" src="img/Yin_and_Yang_symbol.svg.png" alt="" width="72" height="72">
+                        <h1 class="display-5 fw-bold">A perfect balance between youth and experience.</h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead mb-4">Welkom op mijn portfolio. Op deze website zal u alle informatie terugvinden
+                                omtrent wie ik ben als persoon, waar ik voor sta, waar ik vandaan kom en waar ik naartoe ga.</p>
+                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Embrace</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Solitude.</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-row justify-content-center">
+                        <div class="col my-card col-sm-12 d-flex justify-content-center col-md-4">
+                            <div class="card ml-1" style="width: 18rem;">
+                                <img src="img/voetbal_cards.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">hobby's</h5>
+                                    <p class="card-text">Waar het allemaal begon. </p>
+                                    <a href="hobby.html" class="btn btn-info">Ga naar pagina</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col my-card col-sm-12 d-flex justify-content-center col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/cvfoto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">curriculum vitae</h5>
+                                    <p class="card-text">Kwalificaties en prestaties.</p>
+                                    <a href="cv.html" class="btn btn-secondary">Ga naar pagina</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="col my-card col-sm-12 d-flex justify-content-center col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/ervaring_card.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">ervaring</h5>
+                                    <p class="card-text">Loopbanen en studies.</p>
+                                    <a href="ervaring.html" class="btn btn-warning">Ga naar pagina</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-index">
+                    <div class="row my-welkom">
+                        <div class="col">
+                            <h1>Noah Egemasi</h1>
+                            <p>Welkom op mijn website! Zoals hierboven in grote letters vermeld, is mijn naam wel werkelijk Noah. Ik
+                                ben een enthousiaste, jonge programmeur met torenhoge ambities. Geboren op de vierde dag van de
+                                negende maand van het 2000ste jaar - al meer dan 22 jaar aan plezier! </p><img class="img-thumbnail" src="img/selfie.jpg" alt="selfie" height="200" width="200">
+                        </div>
+            
+            
+                    </div>
+                    <br>
+                    <br>
+                    <p>Al van jongs af aan was ik altijd terug te vinden achter de schermen. Het is dan ook geen geheim dat ik hier
+                        ongetwijfeld verder mee wilde gaan en zo een carriere in de IT-sector ben gestart. Ik behaalde een <a
+                            href="ervaring.html">graduaatsdiploma Programmeren</a> aan de Thomas More hogeschool te Turnhout. Naast
+                        code schrijven, hou ik er ook van om up to date te zijn met de hedendaagse economie en de staat van de
+                        financiële markten. Een echte boekenworm dus!</p>
+                    <br>
+                    <br>
+                    <p>Wanneer het tijd is om even wat minder achter de schermen te zitten, trek ik mijn <a
+                            href="hobby.html">voetbalschoenen</a> aan en trap ik graag een balletje met een vriend of twee. Voetbal
+                        is mijn eerste liefde sinds jongs af aan, en je eerste liefde vergeet je nooit!</p>
+                    <br>
+                    <br>
+                    <p>Mezelf zou ik het beste kunnen omschrijven als vurig, behulpzaam en competent. Ik heb niet veel nodig om een
+                        project tot een goed eind te brengen. Nochtans ben ik een teamspeler; Wanneer de taken efficiënt verdeeld
+                        kunnen worden zal een project altijd optimaal uitgewerkt zijn</p>
+                </div>
+            </main>
+            <footer>
+                <div class="row">
+                    <div class="col my-copyright d-flex justify-content-center col-sm-6 col-md-6 bg-light">
+                        &copy; <em id="copyright"></em>Noah Egemasi
+                    </div>
+                    <div class="col my-footer d-flex justify-content-center col-sm-6 col-md-6 bg-light">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </footer>
+            
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+                integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+                crossorigin="anonymous"></script>
+            </body>
+            
+            </html>
